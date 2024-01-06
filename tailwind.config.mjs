@@ -17,7 +17,7 @@ export default {
             colors: {
                 primary: 'hsl(216, 78%, 7%)',
                 secondary: 'hsl(182, 96%, 42%)',
-                tertiary: 'hsl(199, 95%, 31%)',
+                contrast: 'hsl(33, 86%, 45%)',
                 light: 'hsl(180, 5%, 96%)',
             }
         },

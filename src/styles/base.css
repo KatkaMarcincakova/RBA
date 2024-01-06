@@ -47,7 +47,7 @@ h6 { font-size: 1.0rem !important; }
 .animated-underline::after {
     display: block;
     content: '';
-    @apply border-b-2 border-secondary;
+    @apply border-b-2 border-contrast;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
@@ -76,7 +76,7 @@ h6 { font-size: 1.0rem !important; }
     left: 0;
     width: 24px;
     height: 3px;
-    background: #F4F5F5;
+    background: #d67d10;
     transform: rotate(0);
     transition: all 0.5s;
     border-radius: 5px;
