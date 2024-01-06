@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    font-family: 'Rubik', system-ui;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.font-2 {
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+.full-screen {
+    @apply w-full h-screen;
+}
+
+button, a {
+    transition: all 0.2s ease-in;
+}
+
+h1 { font-size: 2.75rem !important; }
+h2 { font-size: 1.741rem !important; }
+h3 { font-size: 1.516rem !important; }
+h4 { font-size: 1.320rem !important; }
+h5 { font-size: 1.149rem !important; }
+h6 { font-size: 1.0rem !important; }
+
+.content {
+    @apply w-[90%] max-w-[90%] lg:w-[85%] lg:max-w-[85%] mx-auto;
+}
+
+/*Nav animations
+--------------------------------------------------*/
+
+.animated-underline {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.animated-underline::after {
+    display: block;
+    content: '';
+    @apply border-b-2 border-purple;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animated-underline:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Hamburger Menu */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 3px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

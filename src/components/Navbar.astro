@@ -1,0 +1,48 @@
+<nav class="z-50  relative h-10">
+    <div class="fixed w-full py-5 bg-black shadow-md" id="navbar">
+        <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
+            <!-- Logo -->
+            <div class="self-center">
+                <a href="#hero" class="outline-none p-0 w-24 font-bold text-2xl" aria-label="navigate to home a">
+                    <span class="text-purple">RBA</span>
+                </a>
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden space-x-6 self-center text-sm font-normal md:flex text-white">
+                <a href="#services" class="animated-underline self-center" aria-label="navigate to services button">
+                    SERVICES
+                </a>
+                <a href="#about" class="animated-underline self-center" aria-label="navigate to about me button">
+                    ABOUT
+                </a>
+                <a href="#projects" class="animated-underline self-center" aria-label="navigate to projects button">
+                    PROJECTS
+                </a>
+                <a href="#contact" class="animated-underline self-center" aria-label="navigate to contact button">
+                    CONTACT
+                </a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger self-center md:hidden focus:outline-none" aria-label="toggle mobile menu button">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="menu" class="full-screen hidden z-50 fixed backdrop-blur-sm mt-8">
+    <div class="font-semibold tracking-widest bg-white">
+        <div class="flex flex-col max-w-[90%] mx-auto">
+            <button id="services-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to services button">SERVICES</button>
+            <hr class="w-full border-0 border-b border-gray-500">
+            <button id="about-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to about me button">ABOUT</button>
+            <hr class="w-full border-0 border-b border-gray-500">
+            <button id="projects-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to projects button">PROJECTS</button>
+            <hr class="w-full border-0 border-b border-gray-500">
+            <button id="contact-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to contact button">CONTACT</button>
+        </div>
+    </div>
+</div>

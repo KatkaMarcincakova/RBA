@@ -1,0 +1,14 @@
+﻿---
+
+const {title, desc, icon} = Astro.props;
+
+---
+<div class="mt-6 flex flex-row space-x-3">
+    <div class="text-pink text-lg">
+        <i class=`fa-solid ${icon}`></i>
+    </div>
+    <div>
+        <span class="font-medium text-sm xxs:text-lg">{title}</span> <br/>
+        <span class="text-xs xxs:text-sm text-gray-500">{desc}</span>
+    </div>
+</div>
