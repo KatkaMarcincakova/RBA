@@ -1,16 +1,61 @@
-<footer id="footer" class="w-full p-2 bg-contrast">
-    <div class="w-max mx-auto space-x-4">
-        <a href="mailto:marcincakova.katarina@gmail.com" target="_blank" aria-label="mail to my email address" class="no-underline">
-            <i class="fa-solid fa-at self-center"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/katarinamarcincakova/" target="_blank"  aria-label="Navigates to LinkedIn profile" class="no-underline">
-            <i class="fa-brands fa-linkedin-in self-center"></i>
-        </a>
-        <a href="https://github.com/KatkaMarcincakova" target="_blank" aria-label="Navigates to GitHub profile" class="no-underline">
-            <i class="fa-brands fa-github self-center"></i>
-        </a>
-    </div>
-    <div class="w-max mx-auto text-xs">
-        Katarína Marcinčáková © 2023
-    </div>
+<footer id="footer" class="w-full pt-12 pb-2 bg-primary">
+    <div class="content text-light">
+		<div class="w-full grid grid-cols-1 m:grid-cols-5 gap-2 text-xs lg:text-sm">
+			<div class="m:col-span-2">
+				<a href="#hero" class="outline-none p-0 w-24 font-bold text-2xl" aria-label="navigate to home a">
+                    <span class="text-contrast">Roboticky Battle Alejova</span>
+                </a>
+				<p class="mt-4 w-5/6 m:w-2/3 mx-auto m:ml-0 text-center m:text-left">
+					Súťaž pre žiakov základných a stredných škôl, ktorí majú záujem o robotiku. Cieľom súťaže je popularizácia robotiky a informatiky na školách.
+				</p>
+				<div class="flex flex-row space-x-4 mt-4 w-max mx-auto m:ml-0">
+					<div class="w-8 h-8 bg-lightGreen text-center flex items-stretch rounded-full">
+						<a class="self-center w-max mx-auto" href="" target="_blank">
+                            FB
+                        </a>
+					</div>
+					<div class="w-8 h-8 bg-lightGreen text-center flex items-stretch rounded-full">
+						<a class="self-center w-max mx-auto" href="" target="_blank">
+                            IG
+                        </a>
+					</div>
+				</div>
+			</div>
+            <div class="m:col-span-3 grid grid-cols-1 sm:grid-cols-3 sm:gap-2 mt-4 m:mt-0 w-full">
+                <div class="w-max mx-auto m:ml-0 mt-8 sm:mt-0">
+                    <h6 class=" text-center sm:text-left text-contrast">Dôležité odkazy</h6>
+                    <div class="flex flex-col space-y-2 mt-4">
+                        <a href="https://zsmssvgorazd.edupage.org/" target="_blank" class="animated-underline w-max mx-auto sm:ml-0">RBA 2024</a>
+                        <a href=`${import.meta.env.BASE_URL}o-nas/rada-rodicov/` class="animated-underline w-max mx-auto sm:ml-0">Pravidla</a>
+                        <a href="https://drive.google.com/drive/folders/1OfUb0qkgFZOWnoxmoHfKm_04Ba4QMSkJ?usp=drive_link" target="_blank" class="animated-underline w-max mx-auto sm:ml-0">Registracia</a>
+                    </div>
+                </div>
+                <div class="w-max mx-auto m:ml-0 mt-8 sm:mt-0">
+                    <h6 class=" text-center sm:text-left text-contrast">Informácie</h6>
+                    <div class="flex flex-col space-y-2 mt-4">
+                        <a href=`${import.meta.env.BASE_URL}aktuality/${new Date().getFullYear().toString()}/` class="animated-underline w-max mx-auto sm:ml-0">Aktuality</a>
+                        <a href=`${import.meta.env.BASE_URL}kalendar/` class="animated-underline w-max mx-auto sm:ml-0">Organizatori</a>
+                        <a href=`${import.meta.env.BASE_URL}prazdniny/` class="animated-underline w-max mx-auto sm:ml-0">Galeria</a>
+                        <a href=`${import.meta.env.BASE_URL}zoznam-pomocok/` class="animated-underline w-max mx-auto sm:ml-0">Vase projekty</a>
+                    </div>
+                </div>
+                <div class="w-max mx-auto m:ml-0 mt-8 sm:mt-0">
+                    <h6 class=" text-center sm:text-left text-contrast">Kontakt</h6>
+                    <div class="mt-4 w-full text-center sm:text-left">
+                        info@robotickybattle.sk <br/>
+                        FB: RobotickyBattle <br/>
+                    </div>
+                    <a href=`${import.meta.env.BASE_URL}kontakt/` class="animated-underline w-max mx-auto sm:ml-0 mt-2">Kontaktné údaje</a>
+                </div>
+            </div>
+		</div>
+		<div class="w-full flex flex-col lg:flex-row justify-center lg:justify-between text-[0.5rem] lg:text-xs self-center text-center mt-4">
+			<div>
+				© 2023 Copyright Robotický Battle Alejova
+			</div>
+			<div>
+				Vytvorené s 🤍 od <a href="https://devity.sk/" target="_blank" class="animated-underline w-max">DEVITY Software</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Forografie a ilustrácie: archív RBA a <a href=`${import.meta.env.BASE_URL}credits/` class="animated-underline w-max mx-auto sm:ml-0">Freepik</a> | <a href=`${import.meta.env.BASE_URL}admin/index.html` class="animated-underline w-max mx-auto sm:ml-0">Admin</a>
+			</div>
+		</div>
+	</div>
 </footer>
