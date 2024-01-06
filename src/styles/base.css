@@ -106,3 +106,7 @@ h6 { font-size: 1.0rem !important; }
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+.glow {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+}
