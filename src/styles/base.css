@@ -7,6 +7,7 @@ html {
     font-family: 'Tektur', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    @apply text-primary;
 }
 
 .font-1 {
