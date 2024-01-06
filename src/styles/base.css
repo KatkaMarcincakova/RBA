@@ -41,6 +41,10 @@ h6 { font-size: 1.0rem !important; }
     @apply w-[90%] max-w-[90%] lg:w-[85%] lg:max-w-[85%] mx-auto;
 }
 
+p {
+    @apply tracking-wider;
+}
+
 /*Nav animations
 --------------------------------------------------*/
 
