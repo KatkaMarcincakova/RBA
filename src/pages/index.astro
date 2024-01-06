@@ -3,16 +3,134 @@
 import MainLayout from "@layouts/MainLayout.astro";
 
 import bg from "../assets/hero-bg.jpg";
+
+import Button from "@components/Button.astro";
 ---
 
 <MainLayout title="Home">
-	<div class="w-full  md:h-screen bg-cover bg-repeat bg-top" style={{backgroundImage: `url('${bg.src}')`,}} >
-		<div class="w-full h-full py-20 bg-black bg-opacity-50">
-			<div id="heroText" class="content text-base xs:text-xl s:text-2xl md:text-3xl font-display text-light p-4 md:translate-y-1/3 glow text-center flex flex-col space-y-8">
-				<div>13. rocnik</div>
-				<div class="text-3xl xs:text-5xl s:text-6xl md:text-7xl uppercase tracking-wider">najvacsieho robotickeho suboja v kosiciach</div>
-				<div class="text-xl xs:text-3xl s:text-4xl md:text-5xl">3. jun 2024</div>
+	<div class="w-full md:min-h-screen bg-cover bg-repeat bg-top" style={{backgroundImage: `url('${bg.src}')`,}} >
+		<div class="w-full md:min-h-screen pt-32 bg-black bg-opacity-50">
+			<div id="heroText" class="content text-base xs:text-xl s:text-2xl h-full md:text-3xl font-display text-light glow text-center flex flex-col justify-center space-y-16">
+				<div class=" flex flex-col space-y-8">
+					<div>13. rocnik</div>
+					<div class="text-3xl xs:text-5xl s:text-6xl md:text-7xl uppercase tracking-wider">najvacsieho robotickeho suboja v kosiciach</div>
+					<div class="text-xl xs:text-3xl s:text-4xl md:text-5xl">3. jun 2024</div>
+				</div>
+				
+							
+				<div class="mx-auto">
+					<Button title="Pridat sa" />
+				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="w-full bg-contrast py-8 ">
+		<div class="content flex flex-row justify-around">
+			<div>
+				<h1 class="text-center">123</h1>
+				<h2 class="text-center">projektov</h2>
+			</div>
+			<div>
+				<h1 class="text-center">456</h1>
+				<h2 class="text-center">nadsencov</h2>
+			</div>
+			<div>
+				<h1 class="text-center">789</h1>
+				<h2 class="text-center">skol</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="content flex flex-row justify-between my-24">
+		<div class="w-1/2 flex flex-col space-y-8">
+			<h1 class="font-bold text-contrast">Co je to RBA?</h1>
+			<p>
+				RBA (Robotický Battle na Alejovej) predstavuje stimulujúcu súťaž pre žiakov základných a stredných škôl, ktorí sa nadchýnajú pre svet robotiky. Hlavným cieľom tejto súťaže je šíriť popularitu a záujem o robotiku a informatiku medzi študentmi na všetkých úrovniach vzdelávania. V rámci RBA majú mladí nadšenci možnosť predviesť svoje schopnosti, kreativitu a technické vedomosti prostredníctvom rôznorodých robotických úloh. Táto iniciatíva napomáha nielen rozvíjaniu praktických dovedností, ale aj podnecuje zvedavosť a vášeň pre moderné technológie a informatiku u mladých ľudí.
+			</p>
+			<Button title="Viac o aktualnom rocniku" dark="true" />
+		</div>
+		<div class="w-1/3">
+			foto
+		</div>
+	</div>
+
+	<div class="w-full bg-primary py-8 mt-24">
+		<div class="content flex flex-col space-y-12 items-center">
+			<h1 class="font-bold text-light text-center">Pretav nudne kocky na zaujimave stroje</h1>
+			<Button title="Prezriet projekty"/>
+		</div>
+	</div>
+
+	<div class="content mt-24 flex flex-col justify-center space-y-24">
+		<h1 class="font-bold text-contrast text-center">Pridaj sa k jednej z nasich jednotiek</h1>
+		<div class="flex flex-row justify-between mt-6">
+			<div class="w-1/3">
+				foto
+			</div>
+			<div class="w-1/2 flex flex-col space-y-4">
+				<div>
+					<h2>Piloti</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus libero eget nibh tincidunt accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris convallis mattis elit.
+					</p>
+				</div>
+				<div>
+					<h2>Vedci</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus libero eget nibh tincidunt accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris convallis mattis elit.
+					</p>
+				</div>
+				<div>
+					<h2>Inovatori</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus libero eget nibh tincidunt accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris convallis mattis elit.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="w-max mx-auto">
+			<Button title="Prihlasit sa do sutaze" dark="true" />
+		</div>
+	</div>
+
+	<div class="w-full bg-contrast py-8 mt-24">
+		<h4 class="font-bold  text-center">Organizatori</h4>
+		<div class="content flex flex-row justify-around">
+			<div>
+				logo
+			</div>
+			<div>
+				logo
+			</div>
+			<div>
+				logo
+			</div>
+		</div>
+		<h4 class="font-bold  text-center mt-6">Sponzori</h4>
+		<div class="content flex flex-row justify-around">
+			<div>
+				logo
+			</div>
+			<div>
+				logo
+			</div>
+			<div>
+				logo
+			</div>
+		</div>
+	</div>
+
+	<div class="content flex flex-row justify-between my-24">
+		<div class="w-1/2 flex flex-col">
+			<h1 class="font-bold text-contrast">Bud vzdy v obraze!</h1>
+			<p>
+				Pridaj sa na nas newsletter a sleduj nas na fb a ig aby ti uz nic neuniklo
+			</p>
+		</div>
+		<div class="w-1/3 flex flex-col space-y-6">
+			<Button title="Newsletter" dark="true" />
+			<Button title="Facebook" dark="true" />
 		</div>
 	</div>
 </MainLayout>

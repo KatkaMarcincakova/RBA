@@ -1,0 +1,13 @@
+﻿---
+const {title, link, dark} = Astro.props;
+---
+
+{dark ? (
+    <a href={link} class="text-primary border-4 border-contrast bg-transparent w-max px-8 py-2 hover:bg-contrast hover:text-light hover:cursor-pointer">
+        {title}
+    </a>
+) : (
+    <a href={link} class="text-light border-4 border-contrast bg-transparent w-max px-8 py-2 hover:bg-contrast hover:cursor-pointer">
+        {title}
+    </a>
+)}
