@@ -26,6 +26,10 @@ button, a {
     transition: all 0.2s ease-in;
 }
 
+nav {
+    transition: all 2s ease-in;
+}
+
 h1 { font-size: 2.75rem !important; }
 h2 { font-size: 1.741rem !important; }
 h3 { font-size: 1.516rem !important; }
