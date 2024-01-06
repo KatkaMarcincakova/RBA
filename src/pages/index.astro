@@ -1,8 +1,15 @@
 ---
+import { Image } from 'astro:assets';
 
 import MainLayout from "@layouts/MainLayout.astro";
 
 import bg from "../assets/hero-bg.jpg";
+import ap from "../assets/sponsors/ap-logo.png";
+import galeje from "../assets/sponsors/galeje-logo.png";
+import pm from "../assets/sponsors/pm-logo.png";
+import sos from "../assets/sponsors/sos-logo.svg";
+import strom from "../assets/sponsors/strom-logo.png";
+import upjs from "../assets/sponsors/upjs-logo.png";
 
 import Button from "@components/Button.astro";
 ---
@@ -96,27 +103,27 @@ import Button from "@components/Button.astro";
 
 	<div class="w-full bg-contrast py-8 mt-24">
 		<h4 class="font-bold  text-center">Organizatori</h4>
-		<div class="content flex flex-row justify-around">
+		<div class="content grid grid-cols-5 gap-2">
 			<div>
-				logo
+				<Image src={galeje} alt="galeje logo" class="h-16 w-auto mx-auto grayscale" />
 			</div>
-			<div>
-				logo
+			<div class="col-start-3">
+				<Image src={strom} alt="strom logo" class="h-16 w-auto mx-auto grayscale" />
 			</div>
-			<div>
-				logo
+			<div class="col-start-5">
+				<Image src={upjs} alt="upjs logo" class="h-16 w-auto mx-auto grayscale" />
 			</div>
 		</div>
 		<h4 class="font-bold  text-center mt-6">Sponzori</h4>
-		<div class="content flex flex-row justify-around">
+		<div class="content grid grid-cols-5 gap-2">
 			<div>
-				logo
+				<Image src={pm} alt="pm logo" class="h-16 w-auto mx-auto grayscale" />
 			</div>
-			<div>
-				logo
+			<div class="col-start-3">
+				<Image src={ap} alt="aquapro logo" class="h-16 w-auto mx-auto grayscale" />
 			</div>
-			<div>
-				logo
+			<div class="col-start-5">
+				<Image src={sos} alt="sos logo" class="h-16 w-auto mx-auto grayscale" />
 			</div>
 		</div>
 	</div>
